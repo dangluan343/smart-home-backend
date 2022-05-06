@@ -1,0 +1,336 @@
+POST http://localhost:5000/api/auth/register 
+Content-Type: application/json
+
+{
+    "username": "huuphuc123", 
+    "password": "Huuphuc123"
+}
+
+###
+
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+  "username": "luanluan", 
+    "password": "Luanluan123"
+}
+###
+
+POST http://localhost:5000/api/auth/login/luanluan
+Content-Type: application/json
+
+{
+    "password": "Luanluan123",
+    "adaUsername": "luanluan151101",
+"adaPassword": "aio_pUIB76OUsduOuWBf2o6oqOqGWVzK"
+}
+
+
+###
+
+POST http://localhost:5000/api/devices
+Content-Type: application/json
+
+{
+  "keyFeed": "bbc-led",
+  "objId": "62592e1708751ecda1560f45",
+  "deviceType": "light",
+  "status": "off",
+  "value": "0",
+  "room": "living room"
+}
+
+
+###
+
+GET http://localhost:5000/api/devices
+Content-Type: application/json
+
+{
+  "username": "luanluan123"
+}
+
+
+###
+
+PUT http://localhost:5000/api/devices/bbc-led
+Content-Type: application/json
+
+{
+
+  "id": "1",
+  "deviceType": "light",
+  "status": "off",
+  "value": "0",
+  "room": "bed room",
+  "username": "luanluan123"
+}
+
+###
+
+DELETE http://localhost:5000/api/devices/bbc-led
+Content-Type: application/json
+
+{
+  "keyFeed": "bbc-led1",
+  "username": "luanluan123"
+}
+
+###
+
+POST http://localhost:5000/api/activities
+Content-Type: application/json
+
+{
+  "deviceId": "625e3ec5a80a86b22def85db",
+  "keyFeed": "bathroom.bbc-led",
+  "roomId": "6260cad4789795e00502cbd1",
+  "userId": "625a3d719ba5633378214674"
+}
+
+###
+
+POST http://localhost:5000/api/activities
+Content-Type: application/json
+
+{
+  "deviceId": "625e3eeca80a86b22def85dd",
+  "keyFeed": "bathroom.bbc-door",
+  "roomId": "6260cad4789795e00502cbd1",
+  "userId": "625a3d719ba5633378214674"
+}
+
+###
+
+POST http://localhost:5000/api/activities
+Content-Type: application/json
+
+{
+  "deviceId": "625e3ec5a80a86b22def85db",
+  "keyFeed": "kitchen.bbc-led",
+  "roomId": "6260caca789795e00502cbcf",
+  "userId": "625a3d719ba5633378214674"
+}
+
+###
+
+POST http://localhost:5000/api/activities
+Content-Type: application/json
+
+{
+  "deviceId": "625e3eeca80a86b22def85dd",
+  "keyFeed": "kitchen.bbc-door",
+  "roomId": "6260caca789795e00502cbcf",
+  "userId": "625a3d719ba5633378214674"
+}
+
+###
+
+POST http://localhost:5000/api/activities
+Content-Type: application/json
+
+{
+  "deviceId": "625e3ee1a80a86b22def85dc",
+  "keyFeed": "kitchen.bbc-fan",
+  "roomId": "6260caca789795e00502cbcf",
+  "userId": "625a3d719ba5633378214674"
+}
+
+###
+
+POST http://localhost:5000/api/activities
+Content-Type: application/json
+
+{
+  "deviceId": "625e3ec5a80a86b22def85db",
+  "keyFeed": "bedroom.bbc-led",
+  "roomId": "62607cfa9461ddda6de59ddd",
+  "userId": "625a3d719ba5633378214674"
+}
+
+###
+
+POST http://localhost:5000/api/activities
+Content-Type: application/json
+
+{
+  "deviceId": "625e3eeca80a86b22def85dd",
+  "keyFeed": "bedroom.bbc-door",
+  "roomId": "62607cfa9461ddda6de59ddd",
+  "userId": "625a3d719ba5633378214674"
+}
+
+
+###
+
+POST http://localhost:5000/api/activities
+Content-Type: application/json
+
+{
+  "deviceId": "625e3ee1a80a86b22def85dc",
+  "keyFeed": "bedroom.bbc-fan",
+  "roomId": "62607cfa9461ddda6de59ddd",
+  "userId": "625a3d719ba5633378214674"
+}
+
+###
+
+POST http://localhost:5000/api/activities
+Content-Type: application/json
+
+{
+  "deviceId": "625e3ec5a80a86b22def85db",
+  "keyFeed": "living-room.bbc-led",
+  "roomId": "62607074a48c5106318f7892",
+  "userId": "625a3d719ba5633378214674"
+}
+
+###
+
+POST http://localhost:5000/api/activities
+Content-Type: application/json
+
+{
+  "deviceId": "625e3eeca80a86b22def85dd",
+  "keyFeed": "living-room.bbc-door",
+  "roomId": "62607074a48c5106318f7892",
+  "userId": "625a3d719ba5633378214674"
+}
+
+
+###
+
+POST http://localhost:5000/api/activities
+Content-Type: application/json
+
+{
+  "deviceId": "625e3ee1a80a86b22def85dc",
+  "keyFeed": "living-room.bbc-fan",
+  "roomId": "62607074a48c5106318f7892",
+  "userId": "625a3d719ba5633378214674"
+}
+
+
+###
+
+POST http://localhost:5000/api/activities
+Content-Type: application/json
+
+{
+  "deviceId": "625e3f01a80a86b22def85de",
+  "keyFeed": "bbc-humi",
+  "roomId": "62607074a48c5106318f7892",
+  "userId": "625a3d719ba5633378214674"
+}
+
+###
+
+POST http://localhost:5000/api/activities
+Content-Type: application/json
+
+{
+  "deviceId": "625e3f11a80a86b22def85e0",
+  "keyFeed": "bbc-temp",
+  "roomId": "62607074a48c5106318f7892",
+  "userId": "625a3d719ba5633378214674"
+}
+
+
+###
+
+POST http://localhost:5000/api/activities
+Content-Type: application/json
+
+{
+  "deviceId": "62592e1708751ecda1560f45",
+  "keyFeed": "bathroom.bbc-led",
+  "roomId": "625e3db3a80a86b22def85d6",
+  "userId": "625e6468e9e2f9c58dbcb46f"
+}
+
+###
+
+POST http://localhost:5000/api/activities
+Content-Type: application/json
+
+{
+  "deviceId": "62592e1708751ecda1560f45",
+  "keyFeed": "bathroom.bbc-led",
+  "roomId": "625e3db3a80a86b22def85d6",
+  "userId": "625e6468e9e2f9c58dbcb46f"
+}
+###
+
+GET http://localhost:5000/api/activities
+Content-Type: application/json
+
+{
+  "userId": "62592e1708751ecda1560f45"
+}
+
+###
+
+GET http://localhost:5000/api/activities
+Content-Type: application/json
+
+{
+  "userId": "625e6468e9e2f9c58dbcb46f"
+}
+
+###
+
+DELETE http://localhost:5000/api/activities/bedroom.bbc-led
+
+{
+  "keyFeed": "bedroom.bbc-led",
+}
+
+###
+
+POST http://localhost:5000/api/activities/DevicesInRoomByUser
+Content-Type: application/json
+
+{
+  "userId": "62592e1708751ecda1560f45"
+}
+
+###
+
+POST http://localhost:5000/api/activities/DevicesByUser
+Content-Type: application/json
+
+{
+  "userId": "625a3d719ba5633378214674"
+}
+
+###
+
+GET http://localhost:5000/api/activities/DeviceByRoom/625a3d719ba5633378214674/bedroom
+Content-Type: application/json
+
+###
+POST http://localhost:5000/api/activities/AverageInfoInRoomByUser
+Content-Type: application/json
+
+{
+  "userId": "62592e1708751ecda1560f45"
+}
+
+###
+
+POST http://localhost:5000/api/activities/bathroom.bbc-door
+Content-Type: application/json
+
+{
+  "deviceId": "625e3eeca80a86b22def85dd",
+  "onValue": 15,
+  "offValue": 14,
+  "roomId": "6260cad4789795e00502cbd1",
+  "userId": "625a3d719ba5633378214674"
+}
+
+###
+
+GET http://localhost:5000/api/activities/countAllDevice/luanluan
+Content-Type: application/json
